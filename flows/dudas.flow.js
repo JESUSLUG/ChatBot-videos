@@ -10,7 +10,7 @@ module.exports = addKeyword('dudas', { caseSensitive: false })
         
     ], { capture: true }, null,
     async (ctx, { captured }) => {
-     
+       
         const respuesta = `¡Entendido! Veo que tienes dudas sobre: ${captured}. Responderé tan pronto como pueda.`;
         ctx.sendText(respuesta);
     }
